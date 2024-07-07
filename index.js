@@ -94,7 +94,7 @@ app.patch("/posts/:id", (req, res)=>{
     //reset content
     post.content = newContent;
     console.log(post);    
-    res.send("patch req working.");
+    res.redirect("/posts"); 
 });
 
 // GET : To create edit form for the post API name as "/posts/:id/edit"
